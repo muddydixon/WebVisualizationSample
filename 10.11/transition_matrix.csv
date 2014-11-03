@@ -1,0 +1,9 @@
+"From\To","Arts","Business","Education","Health","History","Sports","Technology","Travel"
+"Arts",0,0.34,0,0,0,0,0.48,0
+"Business",0.41,0,0.26,0,0.97,0,25.99,0
+"Education",0,0.27,1.01,0,1.12,0,0,0
+"Health",0,0,0,0,0.31,0,0.48,0.31
+"History",0,1.19,1.24,0.38,0,0,0.52,0.30
+"Sports",0,0,0,0,0.26,0,0,0
+"Technology",0.69,26.02,0,0.23,0.50,0,0,0
+"Travel",0,0,0,0.38,0.32,0,0,0

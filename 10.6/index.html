@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>d3 introduction</title>
+    <style>
+      .axis line, .axis path { fill: none; stroke: grey; }
+      div.pane { width: 700px; float: left; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="videos" class="pane">
+        <h2>時間帯ごと投稿動画のView (各マスのクリックで動画リストの固定/解除)</h2>
+        <div class="visualization"></div>
+        <div class="list"><h2>トップ20</h2></div>
+      </div>
+      <div id="comments" class="pane">
+        <h2>時間帯ごとコメント (各マスのクリックでコメントリストの固定/解除)</h2>
+        <div class="visualization"></div>
+        <div class="list"><h2>トップ20</h2></div>
+      </div>
+    </div>
+    <p>ニコニコデータセット 動画メタデータ/コメントメタデータ 株式会社ドワンゴ 国立情報学研究所</p>
+    <script type="text/javascript" charset="utf8" src="../components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../components/d3/d3.min.js"></script>
+    <script type="text/coffeescript" charset="utf8" src="../util.coffee"></script>
+    <script type="text/coffeescript" charset="utf8" src="./main.coffee"></script>
+    <script type="text/javascript" charset="utf8" src="../components/coffee-script/extras/coffee-script.js"></script>
+  </body>
+</html>

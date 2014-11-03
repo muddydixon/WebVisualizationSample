@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>d3 introduction</title>
+    <style>
+      .axis line, .axis path { fill: none; stroke: grey; }
+    </style>
+  </head>
+  <body>
+    <p>
+      詳細を見たいノードをクリックすると、そこだけが拡大されます。左端の親ノードをクリックすると、元の画面に戻ります。
+    </p>
+    <script type="text/javascript" charset="utf8" src="../components/d3/d3.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../components/d3-plugins/sankey/sankey.js"></script>
+    <script type="text/coffeescript" charset="utf8" src="../util.coffee"></script>
+    <script type="text/coffeescript" charset="utf8" src="./main.coffee"></script>
+    <script type="text/javascript" charset="utf8" src="../components/coffee-script/extras/coffee-script.js"></script>
+  </body>
+</html>

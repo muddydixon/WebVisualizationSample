@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>WebVisualization</title>
+  </head>
+  <body>
+    <h1>エンジニアのための データ可視化[実践]入門<br> ~D3.jsによるWebの可視化 サンプルプログラム~</h1>
+    <p>D3を利用して可視化を作成するためのひとつのサンプルとして、初学者のみなさまの役に立てていただければと思いサンプルのコードと実際の可視化を公開します</p>
+    <p>データには、Rから取得したもの、川崎市の公開データから採取したもの、国立情報学研究所/ドワンゴが提供してくださったニコニコ動画を含みます</p>
+
+    <h2>閲覧方法</h2>
+    <p>下記のいずれかの方法でWebサーバを立て、ご確認ください</p>
+    <ol>
+      <li>Apache: documentRootの下においてください</li>
+      <li>Python 3.3
+        <pre>$ python -m http.server  8888</pre>
+      </li>
+      <li>Python 2.7
+        <pre>$ python -m SimpleHTTPServer 8000</pre>
+      </li>
+      <li>Ruby(WebRick)
+        <pre>$ ruby -rwebrick -e 'WEBrick::HTTPServer.new(:DocumentRoot => "./", :Port => 8000).start'</pre>
+      </li>
+      <li>Node
+        <pre>$ node -e 'var fs=require("fs"), path = require("path"); require("http").createServer(function(req, res){ url = path.join(__dirname, req.url); res.end(fs.readFileSync(url.replace(/\/$/, "/index.html"), "utf8"))}).listen(8000)'</pre>
+      </li>
+    </ol>
+
+    <h2>サンプル</h2>
+    <ul>
+      <li><a href="./2/">第2章 可視化のサンプル</a> (複数の棒グラフ、帯グラフ、レーダーチャート、パラレルチャート)</li>
+      <li><a href="./5/">第5章 可視化によくある過ち</a> (絵グラフ)</li>
+      <li><a href="./6/">第6章 探索的データ可視化</a> (BMIの折線グラフ、業界賃金の箱ひげ図、ヒストグラム、癌の要因の散布図行列)</li>
+      <li><a href="./9/">第9章 d3 紹介</a> (座標系、代表的なSVG要素、バブルチャートを通して学ぶ基礎)</li>
+      <li><a href="./10.1/">第10章 ケース1 サーバ情報の時系列折線グラフ</a></li>
+      <li><a href="./10.2/">第10章 ケース2 リアルタイムで更新されるサーバ情報の折線グラフ</a></li>
+      <li><a href="./10.3/">第10章 ケース3 会員属性のツリーマップ</a></li>
+      <li><a href="./10.4/">第10章 ケース4 会員の離脱率の折線グラフとバブルチャート</a></li>
+      <li><a href="./10.5/">第10章 ケース5 購入価格層の推移</a></li>
+      <li><a href="./10.6/">第10章 ケース6 ニコニコ動画の各日時の投稿動画/コメントのカレンダービュー</a></li>
+      <li><a href="./10.7/">第10章 ケース7 アクセスログのフローチャート</a></li>
+      <li><a href="./10.8/">第10章 ケース8 税金はどこに行った</a></li>
+      <li><a href="./10.9/">第10章 ケース9 単語の解析とワードマップ</a></li>
+      <li><a href="./10.10/">第10章 ケース10 両箱ひげ図</a></li>
+      <li><a href="./10.11/">第10章 ケース11 状態遷移図</a></li>
+      <li><a href="./10.12/">第10章 ケース12 決定木</a></li>
+      <li><a href="./columns.selection/">コラム セレクション</a></li>
+      <li><a href="./columns.layout/">コラム レイアウト</a></li>
+    </ul>
+
+    <h2>注意点</h2>
+    <ul>
+      <li>D3.jsの範囲でのデザインです。皆様で利用現場にあわせて適宜デザインはお願い致します</li>
+      <li>オブジェクト指向を含むデザインパターンはなるべく利用しない、素のコードです。デザインとあわせて現場のコーディング規約などにあわせてご利用ください</li>
+    </ul>
+  </body>
+</html>

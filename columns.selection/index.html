@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>d3 introduction</title>
+    <style>
+      .axis line, .axis path { fill: none; stroke: grey; }
+    </style>
+  </head>
+  <body>
+    <h2>セレクション</h2>
+    <p>
+      selectionは「<code>.selectAll()</code>で対象となるDOM」と「<code>.data()</code>で渡したデータ」を比較すると理解しやすいです。
+    </p>
+    <ol>
+      <li>update: 対象となったDOMとデータの重複する要素、更新を行う対象(<code>.selectAll()</code>のまま)<code>.attr</code>などで変更する</li>
+      <li>exit: 対象となったDOMとマッチするデータが無い対象は、<code>.exit()</code>で取り出して処理(例えば<code>.remove()</code>で削除するなど)を行う</li>
+      <li>enter: 対応するDOMがないデータはおそらくD3を利用していて最も利用する頻度が高い<code>.enter()</code>によって取り出しDOMを追加・処理を行います</li>
+    </ol>
+    <script type="text/javascript" charset="utf8" src="../components/d3/d3.min.js"></script>
+    <script type="text/coffeescript" charset="utf8" src="../util.coffee"></script>
+    <script type="text/coffeescript" charset="utf8" src="./main.coffee"></script>
+    <script type="text/javascript" charset="utf8" src="../components/coffee-script/extras/coffee-script.js"></script>
+  </body>
+</html>
